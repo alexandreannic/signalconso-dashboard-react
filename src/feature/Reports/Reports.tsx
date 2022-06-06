@@ -87,6 +87,10 @@ export const Reports = ({}) => {
     return Object.keys(cleanObject(filters)).length
   }, [_reports.filters])
 
+  const updateFilters = useCallback((_: ReportSearch) => {
+    _reports.updateFilters(prev => ({...prev, ..._}))
+  }, [])
+
   return (
     <Page size="xl">
       <PageTitle>{m.reports_pageTitle}</PageTitle>
@@ -178,9 +182,7 @@ export const Reports = ({}) => {
               </ExportReportsPopper>
               <ReportFilters
                 filters={_reports.filters}
-                updateFilters={_ => {
-                  _reports.updateFilters(prev => ({...prev, ..._}))
-                }}
+                updateFilters={updateFilters}
               >
                 <Tooltip title={m.advancedFilters}>
                   <IconBtn color="primary">
