@@ -14,10 +14,10 @@ import {ScRadioGroup} from '../../../shared/RadioGroup/RadioGroup'
 import {ScRadioGroupItem} from '../../../shared/RadioGroup/RadioGroupItem'
 import {Enum} from '../../../alexlibs/ts-utils'
 import {Txt} from '../../../alexlibs/mui-extension'
-import {fnSwitch} from '../../../alexlibs/ts-utils'
 import {ScButton} from '../../../shared/Button/Button'
 import {useEffectFn} from '../../../alexlibs/react-hooks-lib'
 import {SelectCompany} from '../../../shared/SelectCompany/SelectCompany'
+import {fnSwitch} from 'core/helper/utils'
 
 interface Website {
   id: Id
