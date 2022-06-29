@@ -1,6 +1,4 @@
 export * from './Common'
-export * from './delay/Delay'
-export * from './duration/Duration'
 export * from './enum/Enum'
 export * from './env/Env'
 export * from './env/EnvParser'
