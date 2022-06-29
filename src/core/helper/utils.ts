@@ -60,6 +60,11 @@ interface FnSwitch {
   ): R
 }
 
+/**
+ * Equivalent to the native 'switch' construct.
+ * Might be a bit more convenient, especially in JSX to switch
+ * between different subcomponents
+ */
 export const fnSwitch: FnSwitch = (value, cases, defaultCase?) => {
   const res = cases[value]
   if (!res && !defaultCase) {
