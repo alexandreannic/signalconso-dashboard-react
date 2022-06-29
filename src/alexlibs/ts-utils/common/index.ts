@@ -1,5 +1,4 @@
-export * from './common/Common'
-export * from './common/CommonType'
+export * from './Common'
 export * from './delay/Delay'
 export * from './duration/Duration'
 export * from './enum/Enum'

@@ -1,4 +1,4 @@
-import {PromiseFnResult} from '../common/CommonType'
+import {PromiseFnResult} from '../Common'
 
 /**
  * Map a function returning a Promise without having to redefined his parameters
