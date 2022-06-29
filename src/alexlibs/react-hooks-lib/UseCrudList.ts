@@ -1,4 +1,4 @@
-import {Fetch, Func, useFetcher, useMap, useSetState} from '..'
+import {Fetch, Func, useFetcher, useMap, useSetState} from '.'
 import {useState} from 'react'
 
 type ReadAction<E> = (...args: any[]) => Promise<E>

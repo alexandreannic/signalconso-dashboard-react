@@ -1,4 +1,4 @@
-import {Fetch, useFetcher} from '..'
+import {Fetch, useFetcher} from '.'
 import {Dispatch, SetStateAction, useCallback, useState} from 'react'
 
 export interface Paginate<T> {
